@@ -1,0 +1,212 @@
+body {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color:black;
+}
+
+.Coeur1 {
+    
+    border-radius:50%;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    padding: 15%;
+     right: -20px;
+     animation: grow1 linear 30s;
+     animation-iteration-count: infinite;
+      transform-origin: 50% 50%;
+   
+   
+   
+}
+@keyframes grow1 {
+    
+        0% {
+            transform: scale(.1);
+            background-color:black;
+            border-radius: 100%;
+           
+          }
+          50% {
+            background-color: black;
+            
+          }
+          80% {
+           background-color:black;
+           box-shadow: black; 
+          }
+          90% {
+           
+            background-color: yellow ;
+          }
+        
+          100% {
+           
+            background-color: yellow ;
+          }
+      }
+
+
+
+.Coeur1::after {
+	content: '';
+    
+      position: absolute;
+      top:50%;
+      left: 50%;
+      height: 50px;
+      width: 50px;
+      border: 1px solid yellow;
+      border-top: 0 ;
+      border-right: 0;
+      border-radius: 50%;
+      background:yellow;
+      
+     
+     
+      
+}
+
+
+
+
+
+  
+ @keyframes zoom{
+    0% {
+        animation: zoom linear 5s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  }
+}
+
+  .planete {
+
+      background:peru;
+      position: fixed;
+      border-radius:50px;
+        height: 100px;
+      width: 100px;
+      float: left;
+      right: 50px;
+      bottom:20;
+      
+     
+      animation: zoom ease-in-out 3s;
+      animation-iteration-count: infinite;
+      
+      
+      transform-origin: 50% 50%; 
+      animation-fill-mode:forwards;
+      transform: translate(-50%, 50%) rotate(-35deg);
+    
+
+      
+      
+    
+     
+  }
+      
+  
+
+  .planete::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 140%;
+    height: 10px;
+    border: 2px solid #626567  ;
+    border-top: 0;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotate(50deg);
+     
+      
+      
+
+}
+  
+.sun{
+    background:white;
+    border-bottom-right-radius: 88%;
+    border-top-right-radius: 88%;
+    border-bottom-left-radius: 85%;
+    border-top-left-radius: 88%;
+    border-left: 0;
+    border-right: 0;
+    transform: rotate(-45deg) scale(-4);
+    margin-top: -2px;
+    padding: 2px;
+    border-right: 1px solid white ;
+    box-shadow: 12px 12px 2px 12px solid yellow (0, 0, 255, .2);
+     height: 100px;
+    width: 100px;
+    float: right;
+    position: fixed;
+    top: 20%;
+    right:20%;
+    
+   
+}
+
+.sun, .lo {
+
+    animation: zom1 linear 30s;
+   animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+
+}
+
+.lo{
+    border-radius:50px;
+    border-top-right-radius:-50% ;
+    border-width:5em;
+    height: 60px;
+    width: 60px;
+    float: right;
+    position: fixed;
+    top: 20%;
+    right:20%;
+    background:yellow;
+    box-shadow: -100px -50px black(235, 235, 227) ;
+    border: 0;
+
+  }
+  
+  @keyframes zom1{
+    0% {
+        transform: scale(.1);
+        background-color:black;
+        border-radius: 100%;
+        box-shadow: black; 
+      }
+      50% {
+        background-color: white;
+      }
+      80% {
+       background-color: white;
+      }
+      91% {
+       
+        background-color: black;
+      }
+      96% {
+       
+        background-color: white 5s;
+      }
+      98% {
+        transform: scale(1);
+        background-color: black ;
+      }
+      100% {
+        transform: scale(1);
+        background-color: black ;
+         
+      }
+   
+  }
+
+
