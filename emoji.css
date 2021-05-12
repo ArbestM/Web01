@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 0;
+    min-height: height 100vh;
+}
+
+.emoji{
+    background-color: purple;
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
+.emoji::after {
+    background: inherit;
+    position: absolute;
+    content: '';
+    top: -50%;
+    left:0;
+    height: 100px;
+    width: 100px;
+}
